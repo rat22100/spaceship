@@ -1,0 +1,85 @@
+.gameplay { 
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+#spaceship {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/spaceship.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#barier {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/barrier.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 100px;
+    left: 550px;
+}
+
+.start {
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.animate {
+    animation: dangerMoove 2s infinite linear;
+}
+ 
+.active {
+    animation: engineActive .3s linear ;
+}
+
+@keyframes dangerMoove {
+    0% {
+        left: 550px; 
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+@keyframes engineActive { 
+    0% {
+        top: 150px;
+    }
+    10% {
+        top: 125px;
+    }
+    20% {
+        top: 100px;
+    }
+    30% {
+        top: 75px;
+    }
+    40% {
+        top: 50px;
+    }
+    50% {
+        top: 25px;
+    }
+    60% {
+        top: 50px;
+    }
+    70% {
+        top: 75px;
+    }
+    80% {
+        top: 100px;
+    }
+    90% {
+        top: 125px;
+    }
+    100% {
+        top: 150px;
+    }
+}
